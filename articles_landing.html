@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> DIV HOVER IMG ZOOM </title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+</head>
+<body id="page-top" >
+
+<section id="article" class="featured-block ">
+  <div class="row grey-bg landing">
+    <div class="container article-landing"> 
+      
+
+      <a href="#">
+      <div class="col-md-4 col-sm-6 col-xs-12 article-blog animated fadeInUp isotope-item" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+        <article class="blog-post">
+          <div class="post-img img-sec-zoom"><img src="images/img-4.jpg" alt=""></div>
+
+          <div class="post-content">
+              <h1>TESTING<br />AN ELEMENT</h1>
+              <p class="text-center">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.Tauctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+          </div>
+        </article>
+      </div>
+      </a> 
+
+       <a href="#">
+      <div class="col-md-4 col-sm-6 col-xs-12 article-blog animated fadeInUp isotope-item" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+        <article class="blog-post">
+          <div class="post-img img-sec-zoom"><img src="images/img-4.jpg" alt=""></div>
+
+          <div class="post-content">
+              <h1>TESTING<br />AN ELEMENT</h1>
+              <p class="text-center">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.Tauctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+          </div>
+        </article>
+      </div>
+      </a>
+      <a href="#">
+      <div class="col-md-4 col-sm-6 col-xs-12 article-blog animated fadeInUp isotope-item" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+        <article class="blog-post">
+          <div class="post-img img-sec-zoom"><img src="images/img-4.jpg" alt=""></div>
+          <!-- BLOG DETAIL -->
+          <div class="post-content">
+              <h1>TESTING<br />AN ELEMENT</h1>
+              <p class="text-center">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin.Tauctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+          </div>
+        </article>
+      </div>
+      </a>
+
+      
+      
+      
+    </div>
+  </div>
+</section>
+
+<script src="js/jquery-2.2.4.min.js"></script> 
+
+<script src="js/bootstrap.js"></script>
+
+
+
+<script>
+ $(document).ready(function(){
+    $('.img-sec-zoom').parent().hover(function(event) {
+		event.preventDefault();
+   $(this).find(".img-sec-zoom img:first").removeClass('positions');
+        $(this).find(".img-sec-zoom img:first").addClass('position');
+    
+    }, function(event) {event.preventDefault();
+        $(this).find(".img-sec-zoom img:first").removeClass('position');
+  $(this).find(".img-sec-zoom img:first").addClass('positions');
+    });});
+	</script>
+
+
+</body>
+</html>
